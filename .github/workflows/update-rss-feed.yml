@@ -1,0 +1,25 @@
+name: post-to-teams
+on: 
+  push:
+    branches:
+      - main
+    schedule:
+      - cron: '*/15 * * * *'
+jobs:
+  post-to-teams:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup checkout
+        uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Create .env
+        run: |
+          touch .env
+          echo "TEAMS_HOOK_URL=${{ secrets.TEAMS_HOOK_URL }}" >> .env
+      - name: Post to teams
+        run: | 
+          yarn
+          yarn start     
