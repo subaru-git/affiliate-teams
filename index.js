@@ -6,7 +6,7 @@ const fs = require('fs');
 
 (async () => {
   const json = JSON.parse(fs.readFileSync('./data/data.json', 'utf8'));
-  const content = json.data[0];
+  const content = json.data[Math.floor( Math.random() * json.data.length )];
   await axios.post(process.env.TEAMS_HOOK_URL, {
     type: 'message',
     attachments: [
@@ -52,7 +52,7 @@ const fs = require('fs');
                         type: 'Action.OpenUrl',
                         url: content.url
                       },
-                      altText: 'meow',
+                      altText: 'image',
                       url: content.image,
                       size: 'Large'
                     }
