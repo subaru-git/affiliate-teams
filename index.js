@@ -73,4 +73,3 @@ const fs = require('fs');
     ]
   })
 })();
-// <a href="https://www.amazon.co.jp/Dictionary-Monolingual-American-dictionary-students-ebook/dp/B013UX62AA?_encoding=UTF8&qid=&sr=&linkCode=li2&tag=salagramer-22&linkId=2116cee88f97d6caac71da736d6625d7&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B013UX62AA&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=salagramer-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=salagramer-22&language=ja_JP&l=li2&o=9&a=B013UX62AA" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
