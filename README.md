@@ -1,8 +1,7 @@
-# Random Cat Teams
+# Affiliate Teams
 
-Post [random cat API](http://random.cat) images to teams channel.
-
-It makes you happy with cat images.
+Post to a Teams channel what book's phrase with images and links. 
+If links are your affiliate links, you get some reward.
 
 ## Usage
 
